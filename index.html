@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Daxenbichler - Developer Portfolio</title>
+    <meta name="description" content="Richard Daxenbichler - Full Stack Developer Portfolio">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">s    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-links">
+                    <button onclick="scrollToSection('home')" class="nav-link">Home</button>
+                    <button onclick="scrollToSection('work')" class="nav-link">Arbeit</button>
+                    <button onclick="scrollToSection('skills')" class="nav-link">Fähigkeiten</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('contact')" class="nav-link">Kontakt</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section-home">
+        <div class="home-image-fade">
+            <img src="BackgroundImage.jpg" alt="Ihr professionelles Profilbild">
+        </div>
+        <div class="container text-center">
+            <div class="home-greeting">
+                <img src="Foto_Richard.jpeg" alt="Ihr Profilbild" class="nav-avatar">
+                <h2 class="accent-text-purple">Richard Daxenbichler</h2>
+                <h1>
+                    Full-Stack Java Developer
+                </h1> 
+                <hr />
+            </div>
+
+            <p class="hero-description lead">
+                Hallo! Ich bin Richard, ein Full-Stack Java Developer mit <strong>drei Jahren intensiver Erfahrung</strong>, die ich während meiner Lehre zum Applikationsentwickler sammelte, in der Entwicklung und Wartung von <strong>E-Government-Lösungen</strong> bei der Datenverarbeitung Tirol. Mein Ansatz ist <strong>ganzheitlich</strong>: Ich denke nicht nur in Code, sondern in der gesamten <strong>Software-Pipeline</strong>.
+            </p>
+            
+            <p class="hero-description">
+                Meine Expertise umfasst den gesamten Stack, von der Kundenplanung bis zum Deployment, mit fundierten Kenntnissen in <strong>Java, Maven, Oracle SQL</strong> und <strong>Flyway</strong>. Besonders reizt mich die Herausforderung, dieses breite Wissen, untermauert durch meine Leidenschaft für <strong>Server- und Netzwerkadministration</strong> (auch privat), in anspruchsvollen und <strong>wartbaren Systemen</strong> einzusetzen.
+            </p>
+            
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('work')" class="btn-outline">
+                    Meine Projekte
+                </button>
+                <button onclick="scrollToSection('contact')" class="btn-primary">
+                    Kontakt aufnehmen
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">AUSGEWÄHLTE PROJEKTE</h2>
+            
+            <div class="work-list">
+                <div class="work-item">
+                 <!-- <a href="#" class="work-link">  -->
+                        <div class="work-content">
+                            <h3 class="work-title">
+                                Inventarverwaltung - Land Tirol
+                            </h3>
+                            <div class="work-details">
+                                <div>[Tech Stack] Java / Maven / Oracle SQL / Flyway / Primefaces</div>
+                                <div>2024</div>
+                            </div>
+                        </div>
+                 <!-- </a> -->
+                </div>
+
+                <div class="work-item">
+                 <!-- <a href="#" class="work-link">  -->
+                        <div class="work-content">
+                            <h3 class="work-title">
+                                ELAK - Land Tirol
+                            </h3>
+                            <div class="work-details">
+                                <div>[Tech Stack] Java / Maven / Oracle SQL / Flyway / Primefaces</div>
+                                <div>2025</div>
+                            </div>
+                        </div>
+                 <!-- </a> -->
+                </div>
+
+                <div class="work-item">
+                 <!-- <a href="#" class="work-link">  -->
+                        <div class="work-content">
+                            <h3 class="work-title">
+                                Heimserver
+                            </h3>
+                            <div class="work-details">
+                                <div>[Tech Stack] Docker / Ubuntu Server / Tailscale VPN</div>
+                                <div>2024</div>
+                            </div>
+                        </div>
+                 <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-alt portfolio-section">
+        <div class="container">
+            <h2 class="section-title">FÄHIGKEITEN & TECHNOLOGIEN</h2>
+                <div class="skill-category">
+                    <h3 class="skill-title">FRONTEND</h3>
+                    <hr />
+                    <div class="skill-list">
+                        <div class="skill-item-1">JAVASCRIPT</div>
+                        <div class="skill-item-1">PRIMEFACES</div>
+                        <div class="skill-item-1">BOOTSTRAP</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">BACKEND</h3>
+                    <hr />
+                    <div class="skill-list">
+                        <div class="skill-item-2">JAVA</div>
+                        <div class="skill-item-2">C#</div>
+                        <div class="skill-item-2">ORACLE SQL</div>
+                        <div class="skill-item-2">BIRT</div>
+                        <div class="skill-item-2">FLYWAY</div>
+                        <div class="skill-item-2">MAVEN</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="skill-title">TOOLS</h3>
+                    <hr />
+                    <div class="skill-list">
+                        <div class="skill-item-3">GIT</div>
+                        <div class="skill-item-3">VS CODE</div>
+                        <div class="skill-item-3">ECLIPSE</div>
+                        <div class="skill-item-3">JIRA</div>
+                        <div class="skill-item-3">BITBUCKET</div>
+                        <div class="skill-item-3">SVN</div>
+                        <div class="skill-item-3">SCRUM</div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section portfolio-section">
+        <div class="container">
+            <h2 class="section-title">ÜBER MICH</h2>
+            <div class="about-content">
+                <h3>                    
+                    Wie ich zum Entwickler wurde
+                </h3>
+                <p>
+                    Meine berufliche Laufbahn startete in der Datenverarbeitung Tirol. Im Rahmen meiner Ausbildung durchlief ich gezielt alle Abteilungen, von der Netzwerktechnik über die Server- und Datenbankadministration hinweg. Dieses tiefgreifende Systemverständnis bildet heute das Fundament meiner Arbeit. 
+                    Den Großteil meiner Zeit widmete ich jedoch der Anwendungsentwicklung, wo ich meine Full-Stack-Kompetenzen aufbaute und vertiefte.        
+                </p>
+                <h3>                    
+                    Meine Philosophie in der Entwicklung
+                </h3>
+
+                <p>
+                    Ich schreibe Code, der meinem zukünftigen Ich keine Kopfschmerzen bereitet. Das bedeutet für mich: sauber, sicher und vor allem wartbar. Ich lege viel Wert darauf, dass der Code nicht nur die Anforderungen erfüllt, sondern auch die Basis für zukünftige Erweiterungen legt.
+                    Mein persönliches "Testlabor" ist dabei mein Heimserver. Alles, was ich lerne, von VPNs über neue Services bis zu Open-Source-Anpassungen, wird dort auf Herz und Nieren geprüft. Für mich ist das der beste Weg, ein Tool wirklich tiefgehend zu verstehen. Scheitern ist dort erlaubt, und man lernt schnell, wie man Systeme nicht nur programmiert, sondern auch stabil betreibt.                
+                </p>
+                
+                <h3>
+                    Außerhalb der Arbeit findet man mich:
+                </h3>
+                
+                <ul class="about-list">
+                    <li>→ Beim Basketball/Volleyball spielen</li>
+                    <li>→ Beim Mountainbiken</li>
+                    <li>→ Beim Erweitern meines Heimservers</li>
+                </ul>
+                
+                <p>
+                    Ich freue mich auf Ihre Einladung zu einem persönlichen Kennenlernen und bin gespannt darauf, wie ich Ihre Projekte als engagierter Full-Stack Developer bereichern kann.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt portfolio-section">
+        <div class="container text-center">
+            <div class="contact-section text-center">
+                <h2 class="section-title accent-text-purple">BEREIT FÜR IHREN NÄCHSTEN SOFTWAREENTWICKLER?</h2>
+                
+                <p class="contact-description lead">
+                    Sie suchen einen <strong>engagierten Full-Stack Java Developer</strong> mit sofort einsetzbarer Erfahrung in der <strong>gesamten Software-Pipeline</strong>?
+                </p>
+
+                <p class="contact-description">
+                    Mein umfassendes Verständnis von <strong>Java, Systemarchitektur und Deployment</strong> (Maven, Oracle SQL, Flyway) ermöglicht es mir, mich schnell in neue Projekte einzuarbeiten und <strong>wartbare, zuverlässige Lösungen</strong> zu liefern. 
+                </p>
+
+                <p class="contact-description">
+                    Ich bin hochmotiviert, meine Expertise in Ihr Team einzubringen. Kontaktieren Sie mich, um meine Qualifikationen und mein Engagement im Detail zu besprechen.
+                </p>
+            </div>
+            <div class="contact-info">
+                <div>
+                    <a href="mailto:daxenbichler.richard@gmail.com" class="btn-primary">
+                        Email senden
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center">
+            <p>
+                © 2025 RICHARD DAXENBICHLER — ALL RIGHTS RESERVED
+            </p>
+        <!--    <p class="footer-note">
+                TODO: Impressum
+            </p>-->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
