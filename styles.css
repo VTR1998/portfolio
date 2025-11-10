@@ -153,21 +153,13 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect: The Light Pill Appears (MODIFIED) */
 .nav-link:hover {
-  /* BACKGROUND SWAP: Text primary is the light color in dark theme */
-  background-color: var(--text-primary); 
-  
-  /* TEXT COLOR SWAP: Background is the dark color in dark theme */
+  background-color: var(--text-primary);
   color: var(--background); 
-  
-  /* Ensure the cursor/transition properties are maintained if needed, but 'all' handles the transition */
   cursor: pointer;
 }
 
-/* Active Effect: The Light Pill Stays */
 .nav-link.active {
-    /* This rule is now identical to the hover rule, which is correct */
     background-color: var(--text-primary);
     color: var(--background); 
 }
@@ -208,12 +200,10 @@ a {
     position: absolute;
     top: 0;
     right: 0; 
-    width: 100%; /* Breite des Bildbereichs */
+    width: 100%; 
     height: 100%;
     z-index: 1; 
-    
-    /* NEU: Das gesamte Bild bekommt eine reduzierte Deckkraft */
-    opacity: 0.1; /* Reduziert die Sichtbarkeit auf ca. 40% */
+    opacity: 0.1;
 }
 
 .home-image-fade img {
@@ -231,18 +221,15 @@ a {
     width: 100%;
     height: 100%;
     
-    /* Der Verlauf für eine LÄNGERE und sanftere Verschmelzung */
     background: linear-gradient(
         to bottom, 
-        transparent 0%,      /* Oben: Transparent (Bild ist voll sichtbar) */
-        transparent 20%,     /* Bis zur Mitte (50% Höhe): Bleibt transparent (sanfter Übergang beginnt hier) */
-        #1e1e1e 50%,         /* Ab 90% Höhe: Ist fast vollständig die Hintergrundfarbe */
-        #1e1e1e 100%         /* Unten: Volle Hintergrundfarbe (Bild ist komplett ausgeblendet) */
+        transparent 0%,      
+        transparent 20%,     
+        #1e1e1e 50%,         
+        #1e1e1e 100%         
     );
     
     z-index: 2; 
-
-    /* Wichtig: Dieser Gradient wird über das Bild gelegt, daher z-index */
 }
 
 /* Home Section */
@@ -495,7 +482,6 @@ a {
 /* Footer */
 .footer {
   padding: 2rem 1.5rem;
-  /* border-top: 1px solid var(--border); */
 }
 
 .footer p {
